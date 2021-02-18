@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+<title>Frameshift Technology</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Raleway", sans-serif
+    }
+
+    body,
+    html {
+        height: 100%;
+        line-height: 1.8;
+    }
+
+    /* Full height image header */
+    .bgimg-1 {
+        background-position: center;
+        background-size: cover;
+        background-image: url("indexMain.jpg");
+        min-height: 100%;
+    }
+
+    .fs-bar .fs-button {
+        padding: 16px;
+    }
+</style>
+
+<body>
+
+    <!-- Navbar -->
+    <div class="fs-top">
+        <div class="fs-bar fs-white fs-card" id="myNavbar">
+            <a href="#home" class="fs-bar-item fs-button fs-wide"> <img src="frameshiftLogoInvertTrans.png" , height=30
+                    width=30 />Frameshift Technology </a>
+            <!-- Right-sided navbar links -->
+            <div class="fs-right fs-hide-small">
+                <a href="#about" class="fs-bar-item fs-button">ABOUT US</a>
+                <a href="#team" class="fs-bar-item fs-button"> SOLUTIONS TEAM</a>
+                <a href="#stardust" class="fs-bar-item fs-button"> STARDUST</a>
+                <a href="#products" class="fs-bar-item fs-button"> PRODUCTS</a>
+                <a href="#contact" class="fs-bar-item fs-button"> CONTACT</a>
+            </div>
+            <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+            <a href="javascript:void(0)" class="fs-bar-item fs-button fs-right fs-hide-large fs-hide-medium"
+                onclick="fs_open()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Sidebar on small screens when clicking the menu icon -->
+    <nav class="fs-sidebar fs-bar-block fs-black fs-card fs-animate-left fs-hide-medium fs-hide-large"
+        style="display:none" id="mySidebar">
+        <a href="javascript:void(0)" onclick="fs_close()" class="fs-bar-item fs-button fs-large fs-padding-16">Close
+            ×</a>
+        <a href="#about" onclick="fs_close()" class="fs-bar-item fs-button">ABOUT US</a>
+        <a href="#team" onclick="fs_close()" class="fs-bar-item fs-button">SOLUTIONS TEAM</a>
+        <a href="#stardust" onclick="fs_close()" class="fs-bar-item fs-button">PRODUCTS</a>
+        <a href="#products" onclick="fs_close()" class="fs-bar-item fs-button">PRICING</a>
+        <a href="#contact" onclick="fs_close()" class="fs-bar-item fs-button">CONTACT</a>
+    </nav>
+
+    <!-- Header with full-height image -->
+    <header class="bgimg-1 fs-display-container fs-grayscale-min" id="home">
+        <div class="fs-display-left fs-text-white" style="padding:48px">
+            <span class="fs-jumbo fs-hide-small">You have ServiceNow to Automate Everything!</span><br>
+            <span class="fs-xxlarge fs-hide-large fs-hide-medium">You have ServiceNow to Automate Everything!</span><br>
+            <span class="fs-large">Now how can we help?</span>
+            <p><a href="#about"
+                    class="fs-button fs-white fs-padding-large fs-large fs-margin-top fs-opacity fs-hover-opacity-off">See
+                    our Products</a></p>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <div class="fs-container" style="padding:128px 16px" id="about">
+        <h3 class="fs-center">About Us</h3>
+        <p class="fs-center fs-large">What makes Frameshift Different?</p>
+        <div class="fs-row-padding fs-center" style="margin-top:64px">
+            <div class="fs-half">
+                <i class="fa fa-desktop fs-margin-bottom fs-jumbo fs-center"></i>
+                <p class="fs-large">We're Developers</p>
+                <p>Often you find that ServiceNow Applications are built by product, for product. Our team has lived as
+                    partners, developers, administrators and architects on the ServiceNow Platform, so we have
+                    identified areas where automation and quick wins are left on the table.</p>
+            </div>
+
+            <div class="fs-half">
+                <i class="fa fa-cog fs-margin-bottom fs-jumbo"></i>
+                <p class="fs-large">We Build it, You Use it</p>
+                <p>Far too often products are released that tie you into a support structure and maintenance costs that
+                    aren't upfront. We are different. We build our tools to be scaleable, and more importantly managable
+                    with any level of technical expertice. Our tools allow for different levels of configuration from
+                    citizen developer all the way up to a Principal ServiceNow Developer </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Stardust Section -->
+    <div class="fs-container fs-light-grey" style="padding:128px 16px" id="stardust">
+        <div class="fs-row-padding">
+            <div class="fs-col m6">
+                <h3>Stardust Highlight</h3>
+                <p>Feature #1</p>
+                <p>Feature #2</p>
+                <p>Feature #3</p>
+                <p>Feature #4</p>
+                <p>Feature #5</p>
+                <p><a href="#services" class="fs-button fs-black"><i class="fa fa-th"> </i> View Our Products</a></p>
+            </div>
+            <div class="fs-col m6">
+                <img class="fs-image fs-round-large" src="frameshiftLogoInvertTrans.png" alt="largeLogo" width="50%">
+            </div>
+        </div>
+    </div>
+
+    <!-- Team Section -->
+    <div class="fs-container" style="padding:128px 16px" id="team">
+        <h3 class="fs-center">SOLUTIONS TEAM</h3>
+        <p class="fs-center fs-large">We are making it up as we go</p>
+        <div class="fs-row-padding fs-grayscale" style="margin-top:64px;margin-left: 20%;">
+            <div class="fs-col l3 m6 fs-margin-bottom">
+                <div class="fs-card">
+                    <img src="jonHeadshot.jpg" alt="Jon" style="width:100%">
+                    <div class="fs-container">
+                        <h3>Jonathan Yates</h3>
+                        <p class="fs-opacity">CEO</p>
+                        <p>Jon comes from doing this shit for other people, now he wants to do it for himself</p>
+                        <p><button class="fs-button fs-light-grey fs-block"><i class="fa fa-envelope"></i>
+                                Contact</button></p>
+                    </div>
+                </div>
+            </div>
+            <div class="fs-col l3 m6 fs-margin-bottom">
+                <div class="fs-card">
+                    <img src="nickHeadshot.jpg" alt="Nick" style="width:100%">
+                    <div class="fs-container">
+                        <h3>Nick Mooneyham</h3>
+                        <p class="fs-opacity">Employee</p>
+                        <p>He is grumpy, but he will get it done.</p>
+                        <p><button class="fs-button fs-light-grey fs-block"><i class="fa fa-envelope"></i>
+                                Contact</button></p>
+                    </div>
+                </div>
+            </div>
+            <div class="fs-col l3 m6 fs-margin-bottom">
+                <div class="fs-card">
+                    <img src="ryanHeadshot.jpg" alt="Ryan" style="width:100%">
+                    <div class="fs-container">
+                        <h3>Ryan McDevitt</h3>
+                        <p class="fs-opacity">Employee/Sales Guy</p>
+                        <p>Someone Needed to Sell it</p>
+                        <p><button class="fs-button fs-light-grey fs-block"><i class="fa fa-envelope"></i>
+                                Contact</button></p>
+                    </div>
+                </div>
+            </div>
+            <div class="fs-col l3 m6 fs-margin-bottom">
+            </div>
+        </div>
+    </div>
+
+    <!-- Promo Section "Statistics" -->
+    <div class="fs-container fs-row fs-center fs-light-grey fs-padding-64">
+        <div class="fs-third">
+            <span class="fs-xxlarge">Bronze</span>
+            <br>ServiceNow Technology Partner
+        </div>
+        <div class="fs-third">
+            <span class="fs-xxlarge">1</span>
+            <br>Certified Store Application
+        </div>
+        <div class="fs-third">
+            <span class="fs-xxlarge">33%</span>
+            <br>Time Savings
+        </div>
+
+    </div>
+
+
+
+    <!-- Pricing Section -->
+    <div class="fs-container fs-center fs-dark-grey" style="padding:128px 16px" id="services">
+        <h3>Our Products</h3>
+        <p class="fs-large">See all Products Frameshift Offers</p>
+        <div class="fs-row-padding" style="margin-top:64px">
+            <div class="fs-quarter fs-section">
+                <!--
+                <ul class="fs-ul fs-white fs-hover-shadow">
+                    <li class="fs-black fs-xlarge fs-padding-32">Basic</li>
+                    <li class="fs-padding-16"><b>10GB</b> Storage</li>
+                    <li class="fs-padding-16"><b>10</b> Emails</li>
+                    <li class="fs-padding-16"><b>10</b> Domains</li>
+                    <li class="fs-padding-16"><b>Endless</b> Support</li>
+                    <li class="fs-padding-16">
+                        <h2 class="fs-wide">$ 10</h2>
+                        <span class="fs-opacity">per month</span>
+                    </li>
+                    <li class="fs-light-grey fs-padding-24">
+                        <button class="fs-button fs-black fs-padding-large">Sign Up</button>
+                    </li>
+                </ul>
+                -->
+            </div>
+
+            <div class="fs-half">
+                <ul class="fs-ul fs-white fs-hover-shadow">
+                    <li class="fs-red fs-xlarge fs-padding-48">Stardust</li>
+                    <li class="fs-padding-16"><b>Manage SOPs</li>
+                    <li class="fs-padding-16"><b>Organgize and Structure Responses</li>
+                    <li class="fs-padding-16"><b>Automate Simple Tasks</li>
+                    <li class="fs-padding-16"><b>All Native ServiceNow Code</li>
+                    <li class="fs-padding-16">
+                        <h2 class="fs-wide">Contact Us</h2>
+                        <span class="fs-opacity">Priced per Fulfiller</span>
+                    </li>
+                    <li class="fs-light-grey fs-padding-24">
+                        <button class="fs-button fs-black fs-padding-large">Find Out More</button>
+                    </li>
+                </ul>
+            </div>
+            <div class="fs-third fs-section">
+                <!--
+                <ul class="fs-ul fs-white fs-hover-shadow">
+                    <li class="fs-black fs-xlarge fs-padding-32">Premium</li>
+                    <li class="fs-padding-16"><b>50GB</b> Storage</li>
+                    <li class="fs-padding-16"><b>50</b> Emails</li>
+                    <li class="fs-padding-16"><b>50</b> Domains</li>
+                    <li class="fs-padding-16"><b>Endless</b> Support</li>
+                    <li class="fs-padding-16">
+                        <h2 class="fs-wide">$ 50</h2>
+                        <span class="fs-opacity">per month</span>
+                    </li>
+                    <li class="fs-light-grey fs-padding-24">
+                        <button class="fs-button fs-black fs-padding-large">Sign Up</button>
+                    </li>
+                </ul>
+            -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="fs-container fs-light-grey" style="padding:128px 16px" id="contact">
+        <h3 class="fs-center">CONTACT</h3>
+        <p class="fs-center fs-large">Lets get in touch. Send us a message:</p>
+        <div style="margin-top:48px">
+            <p><i class="fa fa-map-marker fa-fw fs-xxlarge fs-margin-right"></i> Chicago, US</p>
+            <p><i class="fa fa-phone fa-fw fs-xxlarge fs-margin-right"></i> Phone: +00 151515</p>
+            <p><i class="fa fa-envelope fa-fw fs-xxlarge fs-margin-right"> </i> Email: Info@Frameshift.com</p>
+            <br>
+            
+                <!--
+                    <form action="contactUs.php" method="POST">
+<p><input class="fs-input fs-border" type="text" placeholder="Name" required name="Name"></p>
+                <p><input class="fs-input fs-border" type="text" placeholder="Email" required name="Email"></p>
+                <p><input class="fs-input fs-border" type="text" placeholder="Subject" required name="Subject"></p>
+                <p><input class="fs-input fs-border" type="text" placeholder="Message" required name="Message"></p>
+                <p>
+                    <input type="submit" name="submit" value="Submit">
+
+               -->
+                <form action="contactUs.php" method="post">
+                    First Name: <input type="text" name="first_name"><br>
+                    Last Name: <input type="text" name="last_name"><br>
+                    Email: <input type="text" name="email"><br>
+                    Message:<br><textarea rows="5" name="message" cols="30"></textarea><br>
+                    <input type="submit" name="submit" value="Submit">
+                </form>
+                <button class="fs-button fs-black" type="submit">
+
+
+                    <i class="fa fa-paper-plane"></i> SEND MESSAGE
+                </button>
+                </p>
+            </form>
+            <!-- Image of location/map -->
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="fs-center fs-black fs-padding-64">
+        <a href="#home" class="fs-button fs-light-grey"><i class="fa fa-arrow-up fs-margin-right"></i>To the top</a>
+        <div class="fs-xlarge fs-section">
+        </div>
+        <script>
+            // Modal Image Gallery
+            function onClick(element) {
+                document.getElementById("img01").src = element.src;
+                document.getElementById("modal01").style.display = "block";
+                var captionText = document.getElementById("caption");
+                captionText.innerHTML = element.alt;
+            }
+
+
+            // Toggle between showing and hiding the sidebar when clicking the menu icon
+            var mySidebar = document.getElementById("mySidebar");
+
+            function fs_open() {
+                if (mySidebar.style.display === 'block') {
+                    mySidebar.style.display = 'none';
+                } else {
+                    mySidebar.style.display = 'block';
+                }
+            }
+
+            // Close the sidebar with the close button
+            function fs_close() {
+                mySidebar.style.display = "none";
+            }
+        </script>
+
+</body>
+
+</html>
